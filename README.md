@@ -5,11 +5,11 @@ Pre-installed:
 
 ## TODO
 
-1. Reporduce the design with React/HTML elements. We recommend bootstrap to set up the responsiveness grid. 
-Assests like logo and images can be fetched from ```localhost:9000/assets/*.*```
+1. Reproduce the design with React/HTML elements. We recommend bootstrap to set up the responsive grid. 
+Assets like logo and images can be fetched from ```localhost:9000/assets/*.*```
 For icons use FontAwesome. Try to make as pixel perfect as possible.
 
-3. For the custom styling add css/style generator to this project. We recomand SASS/SCSS or JSS.
+3. For the custom styling add a css/style generator to this project. We recommend SASS/SCSS or JSS.
 
 4. Make the header (black bar and white bar with logo) ```sticky/fixed``` in all resolutions
 
