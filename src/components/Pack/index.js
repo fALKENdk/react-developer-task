@@ -19,7 +19,7 @@ const Pack = (props) => {
                        <span>{item}</span>
                    :
                        <span>{item}, </span>
-                ))};
+                ))}
             </div>
         </div>
     );
