@@ -4,7 +4,8 @@ import {createUseStyles} from 'react-jss';
 const useStyles = createUseStyles({
     searchbar: {
         borderBottom: '1px solid #ccc',
-        padding: '24px 0'
+        padding: '24px 0',
+        backgroundColor: '#fff',
     },
 
     searchbox: {
