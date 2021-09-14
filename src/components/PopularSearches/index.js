@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import {createUseStyles} from 'react-jss';
+
+
+const useStyles = createUseStyles({
+    section: {
+        padding: 24
+    }
+})
 
 const PopularSearches = () => {
+    const classes = useStyles();
     const [popularSearches, setPopularSearches] = useState([]);
 
     useEffect(async () => {
@@ -25,7 +34,7 @@ const PopularSearches = () => {
     }, []);
 
     return (
-        <React.Fragment>
+        <div className={`${classes.section}`}>
             <div className="row d-none d-lg-flex">
                 <div className="col">
                     <h1>PopularSearches</h1>
@@ -45,7 +54,7 @@ const PopularSearches = () => {
                     </div>
                 ))}
             </div>
-        </React.Fragment>
+        </div>
     )
 };
 

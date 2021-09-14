@@ -3,7 +3,11 @@ import {createUseStyles} from 'react-jss';
 
 const useStyles = createUseStyles({
     pack: {
-        backgroundColor: 'deeppink'
+        '& h3': {
+            fontSize: 22,
+            fontWeight: 'bold',
+            margin: '16px 0 0'
+        }
     }
 })
 
@@ -12,13 +16,14 @@ const Pack = (props) => {
 
     return (
         <div className={`${classes.pack}`}>
+            <img src={`/assets/${props.image}`} className="img-fluid"/>
             <h3>{props.name}</h3>
-            <div>Includes: 
+            <div>Includes: &nbsp;
                 {props.includes.map((item, index) => (
                     index === props.includes.length - 1 ? 
-                       <span>{item}</span>
+                       <span key={`pack-includes-${index}`} >{item}</span>
                    :
-                       <span>{item}, </span>
+                       <span key={`pack-includes-${index}`}>{item}, </span>
                 ))}
             </div>
         </div>
