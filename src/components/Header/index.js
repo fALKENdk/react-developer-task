@@ -70,7 +70,9 @@ const Header = (props) => {
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <img src="/assets/logo-header.svg" alt="Colourbox" />
+                            <a href="/">
+                                <img src="/assets/logo-header.svg" alt="Colourbox" />
+                            </a>
                         </div>
                         <div className="col-auto">
                             <nav aria-labelledby="mainmenulabel">
