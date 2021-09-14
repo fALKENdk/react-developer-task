@@ -33,7 +33,7 @@ const SearchBar = (props) => {
         <div className={`${classes.searchbar}`}>
             <div className="container">
                 <div className="row">
-                    <div className="col-auto d-flex align-items-center">
+                    <div className="col-auto d-none d-lg-flex align-items-center">
                         <a href="/">
                             <img src="/assets/logo.svg" alt="Colourbox" />
                         </a>
